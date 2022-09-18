@@ -1,32 +1,47 @@
 package org.example;
 
-import gr.uom.java.xmi.UMLModel;
-import gr.uom.java.xmi.UMLModelASTReader;
-import gr.uom.java.xmi.diff.UMLModelDiff;
 import org.eclipse.jgit.lib.Repository;
-import org.refactoringminer.api.*;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.refactoringminer.api.GitHistoryRefactoringMiner;
+import org.refactoringminer.api.GitService;
+import org.refactoringminer.api.Refactoring;
+import org.refactoringminer.api.RefactoringHandler;
 import org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl;
 import org.refactoringminer.util.GitServiceImpl;
 
-import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-public class Main {
+public class ListBetweenCommits {
     public static void main(String[] args) throws Exception {
-
+        JSONObject jsonObject = new JSONObject();
         GitService gitService = new GitServiceImpl();
         GitHistoryRefactoringMiner miner = new GitHistoryRefactoringMinerImpl();
 
-        Repository repo = gitService.cloneIfNotExists("tmp/refactoring-toy-example", "https://github.com/py4j/py4j.git");
+        Repository repo = gitService.cloneIfNotExists("tmp/refactoring-toy-example", "https://github.com/danilofes/refactoring-toy-example.git");
 
-        miner.detectAll(repo, "master", new RefactoringHandler() {
+        miner.detectBetweenCommits(repo,  "802e21bffe95f0740f44d1a45e3c22adae0ba48c","0e193b7d02902c6f2abf7c88eebe937d1ac5fc51", new RefactoringHandler()
+        {
           @Override
           public void handle(String commitId, List<Refactoring> refactorings) {
             System.out.println("Refactorings at " + commitId);
-            for (Refactoring ref : refactorings) {
-              System.out.println(ref.toString());
-            }
+              try {
+                    JSONArray ja = new JSONArray();
+                   for (Refactoring ref : refactorings) {
+                    ja.add(ref.toString());
+                    System.out.println(ref.toString());
+                    }
+
+                    jsonObject.put(commitId, ja);
+                    FileWriter file = new FileWriter("between_commits_history.json");
+                    file.write(jsonObject.toJSONString());
+                     file.close();
+              } catch (IOException e) {
+                  throw new RuntimeException(e);
+              }
+
           }
         });
        /* UMLModel model1 = new UMLModelASTReader(new File("D:\\study\\rit\\DSCI.644.01-SW_Engineering_for_Data_Sci\\py4j")).getUmlModel();

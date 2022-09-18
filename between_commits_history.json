@@ -1,0 +1,36 @@
+{
+  "9b23cc2184438f93923c972c45b7caeb43d77d24": [],
+  "bbd8dc082406a950adf73b7211c887bfab6480f1": [
+    "Extract Superclass\torg.reptile.AnimalMarilho from classes [org.reptile.Reptile]"
+  ],
+  "a1b3a91d1a423f2b7360e009e47f30aedb663b6f": [
+    "Rename Class\torg.reptile.Turtle renamed to org.reptile.TurtleMarinha",
+    "Change Variable Type\tother : Turtle to other : TurtleMarinha in method public equals(obj Object) : boolean from class org.reptile.Reptile"
+  ],
+  "6bbfab9e7051362aad9d993f5f6a013b73e75117": [
+    "Pull Up Attribute\tprotected age : int from class org.reptile.Reptile to protected age : int from class org.reptile.AnimalMarilho",
+    "Pull Up Attribute\tprotected name : int from class org.reptile.Reptile to protected name : int from class org.reptile.AnimalMarilho",
+    "Pull Up Attribute\tprotected spead : int from class org.reptile.Reptile to protected spead : int from class org.reptile.AnimalMarilho",
+    "Pull Up Attribute\tprotected action : String from class org.reptile.Reptile to protected action : String from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic getName() : int from class org.reptile.Reptile to public getName() : int from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic setName(name int) : void from class org.reptile.Reptile to public setName(name int) : void from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic getSpead() : int from class org.reptile.Reptile to public getSpead() : int from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic setSpead(spead int) : void from class org.reptile.Reptile to public setSpead(spead int) : void from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic getAction() : String from class org.reptile.Reptile to public getAction() : String from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic setAction(action String) : void from class org.reptile.Reptile to public setAction(action String) : void from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic hashCode() : int from class org.reptile.Reptile to public hashCode() : int from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic equals(obj Object) : boolean from class org.reptile.Reptile to public equals(obj Object) : boolean from class org.reptile.AnimalMarilho"
+  ],
+  "b61e75b773f48e680f5bb7362445ba0642c2ee91": [
+    "Push Down Method\tpublic equals(obj Object) : boolean from class org.reptile.AnimalMarilho to public equals(obj Object) : boolean from class org.reptile.Reptile"
+  ],
+  "9803046111744317efaa65a83e65ce8ceb0c15c2": [
+    "Push Down Method\tpublic getAge() : int from class org.reptile.Reptile to public getAge() : int from class org.reptile.TurtleMarinha",
+    "Push Down Method\tpublic getAge() : int from class org.reptile.Reptile to public getAge() : int from class org.reptile.TurtleTerrarium",
+    "Push Down Method\tpublic setAge(age int) : void from class org.reptile.Reptile to public setAge(age int) : void from class org.reptile.TurtleMarinha",
+    "Push Down Method\tpublic setAge(age int) : void from class org.reptile.Reptile to public setAge(age int) : void from class org.reptile.TurtleTerrarium"
+  ],
+  "0e193b7d02902c6f2abf7c88eebe937d1ac5fc51": [
+    "Push Down Method\tpublic hashCode() : int from class org.reptile.AnimalMarilho to public hashCode() : int from class org.reptile.Reptile"
+  ]
+}

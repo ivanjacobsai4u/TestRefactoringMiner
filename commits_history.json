@@ -1,0 +1,152 @@
+{
+  "5849e143567474f037950f005d994729de0775fc": [],
+  "0a46ed5c56c8b1576dfc92f3ec5bc2f0ea68aafe": [
+    "Push Down Attribute\tprotected age : int from class org.reptile.AnimalMarilho to protected age : int from class org.reptile.Reptile",
+    "Push Down Attribute\tprotected name : int from class org.reptile.AnimalMarilho to protected name : int from class org.reptile.Reptile",
+    "Push Down Method\tpublic getName() : int from class org.reptile.AnimalMarilho to public getName() : int from class org.reptile.Reptile",
+    "Push Down Method\tpublic setName(name int) : void from class org.reptile.AnimalMarilho to public setName(name int) : void from class org.reptile.Reptile"
+  ],
+  "3f3552830d3e464f96f99bd55641a7c7b16bdd11": [
+    "Push Down Attribute\tprivate speed : int from class org.felines.Feline to private speed : int from class org.felines.Tiger",
+    "Push Down Method\tpublic getSpeed() : int from class org.felines.Feline to public getSpeed() : int from class org.felines.Tiger",
+    "Push Down Method\tpublic setSpeed(speed int) : void from class org.felines.Feline to public setSpeed(speed int) : void from class org.felines.Tiger"
+  ],
+  "f35b2c8eb8c320f173237e44d04eefb4634649a2": [
+    "Extract Method\tprivate sleepNight() : void extracted from public sleep() : void in class org.felines.Cat"
+  ],
+  "32bf625304762aaad475fa817150634038f07af5": [],
+  "217e55ff9d01038a23508d24fe4b8af33ac449d1": [],
+  "12b11bf39cb4800e3fa57fb1112c5fbda26de3df": [
+    "Move Class\torg.animals.Tiger moved to org.felines.Tiger"
+  ],
+  "9a9878aeb62a6bb6ff2bed6c03dd1dd7ed1f202b": [
+    "Pull Up Method\tpublic meow() : void from class org.felines.Cat to public meow() : void from class org.felines.Feline"
+  ],
+  "b2c7be7001d4833d14d7fee8c7c989279b4ad039": [],
+  "40950c317bd52ea5ce4cf0d19707fe426b66649c": [
+    "Extract Method\tpublic takeABreath() : void extracted from public bark() : void in class org.animals.Dog"
+  ],
+  "9a5c33b16d07d62651ea80552e8782974c96bb8a": [
+    "Move Attribute\tpublic magicNumber : int from class org.DogManager to public magicNumber : int from class org.animals.Dog"
+  ],
+  "0c5c24356f3179ee320c3318f91278520caafb3a": [
+    "Move Class\torg.felines.Feline moved to org.birds.Feline"
+  ],
+  "63cbed99a601e79c6a0ae389b2a57acdbd3e1b44": [
+    "Rename Class\torg.animals.Cow renamed to org.animals.CowRenamed"
+  ],
+  "bbd8dc082406a950adf73b7211c887bfab6480f1": [
+    "Extract Superclass\torg.reptile.AnimalMarilho from classes [org.reptile.Reptile]"
+  ],
+  "6bbfab9e7051362aad9d993f5f6a013b73e75117": [
+    "Pull Up Attribute\tprotected age : int from class org.reptile.Reptile to protected age : int from class org.reptile.AnimalMarilho",
+    "Pull Up Attribute\tprotected name : int from class org.reptile.Reptile to protected name : int from class org.reptile.AnimalMarilho",
+    "Pull Up Attribute\tprotected spead : int from class org.reptile.Reptile to protected spead : int from class org.reptile.AnimalMarilho",
+    "Pull Up Attribute\tprotected action : String from class org.reptile.Reptile to protected action : String from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic getName() : int from class org.reptile.Reptile to public getName() : int from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic setName(name int) : void from class org.reptile.Reptile to public setName(name int) : void from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic getSpead() : int from class org.reptile.Reptile to public getSpead() : int from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic setSpead(spead int) : void from class org.reptile.Reptile to public setSpead(spead int) : void from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic getAction() : String from class org.reptile.Reptile to public getAction() : String from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic setAction(action String) : void from class org.reptile.Reptile to public setAction(action String) : void from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic hashCode() : int from class org.reptile.Reptile to public hashCode() : int from class org.reptile.AnimalMarilho",
+    "Pull Up Method\tpublic equals(obj Object) : boolean from class org.reptile.Reptile to public equals(obj Object) : boolean from class org.reptile.AnimalMarilho"
+  ],
+  "58495630295833c9d73559bd958c2f95339f9c62": [
+    "Extract Superclass\torg.animals.Bird from classes [org.animals.Chicken, org.animals.Duck]",
+    "Pull Up Method\tpublic layEgg() : void from class org.animals.Chicken to public layEgg() : void from class org.animals.Bird",
+    "Pull Up Method\tpublic layEgg() : void from class org.animals.Duck to public layEgg() : void from class org.animals.Bird"
+  ],
+  "638f37ca6b4dcdbb6a4735f93e37445aeef79749": [
+    "Push Down Method\tpublic equals(obj Object) : boolean from class org.reptile.Reptile to public equals(obj Object) : boolean from class org.reptile.TurtleMarinha",
+    "Push Down Method\tpublic equals(obj Object) : boolean from class org.reptile.Reptile to public equals(obj Object) : boolean from class org.reptile.TurtleTerrarium"
+  ],
+  "9803046111744317efaa65a83e65ce8ceb0c15c2": [
+    "Push Down Method\tpublic getAge() : int from class org.reptile.Reptile to public getAge() : int from class org.reptile.TurtleMarinha",
+    "Push Down Method\tpublic getAge() : int from class org.reptile.Reptile to public getAge() : int from class org.reptile.TurtleTerrarium",
+    "Push Down Method\tpublic setAge(age int) : void from class org.reptile.Reptile to public setAge(age int) : void from class org.reptile.TurtleMarinha",
+    "Push Down Method\tpublic setAge(age int) : void from class org.reptile.Reptile to public setAge(age int) : void from class org.reptile.TurtleTerrarium"
+  ],
+  "70b71b7fd3c5973511904c468e464d4910597928": [
+    "Move Class\torg.animals.Cat moved to org.felines.Cat"
+  ],
+  "36287f7c3b09eff78395267a3ac0d7da067863fd": [
+    "Pull Up Attribute\tprivate age : int from class org.animals.Labrador to private age : int from class org.animals.Dog",
+    "Pull Up Attribute\tprivate age : int from class org.animals.Poodle to private age : int from class org.animals.Dog",
+    "Pull Up Method\tpublic getAge() : int from class org.animals.Labrador to public getAge() : int from class org.animals.Dog",
+    "Pull Up Method\tpublic getAge() : int from class org.animals.Poodle to public getAge() : int from class org.animals.Dog"
+  ],
+  "05c1e773878bbacae64112f70964f4f2f7944398": [
+    "Extract Superclass\torg.felines.Feline from classes [org.felines.Cat]",
+    "Pull Up Method\tpublic meow() : void from class org.felines.Cat to public meow() : void from class org.felines.Feline"
+  ],
+  "0bb0526b70870d57cbac9fcc8c4a7346a4ce5879": [
+    "Rename Method\tpublic bark() : void renamed to public barkBark() : void in class org.animals.Dog"
+  ],
+  "b61e75b773f48e680f5bb7362445ba0642c2ee91": [
+    "Push Down Method\tpublic equals(obj Object) : boolean from class org.reptile.AnimalMarilho to public equals(obj Object) : boolean from class org.reptile.Reptile"
+  ],
+  "7ebd3deba1ae42ff1e9c8585fc304839c5288863": [],
+  "0e193b7d02902c6f2abf7c88eebe937d1ac5fc51": [
+    "Push Down Method\tpublic hashCode() : int from class org.reptile.AnimalMarilho to public hashCode() : int from class org.reptile.Reptile"
+  ],
+  "a5a7f852e45c7cadc8d1524bd4d14a1e39785aa5": [
+    "Add Parameter\tmanager : DogManager in method public barkBark(manager DogManager) : void from class org.animals.Dog"
+  ],
+  "9b23cc2184438f93923c972c45b7caeb43d77d24": [],
+  "f3b628f8f9c71a2cdfa052025c4a1ed78ee4c45d": [],
+  "16be1426aeb34352ba5d97811f3a721b11e3ae00": [],
+  "a1b3a91d1a423f2b7360e009e47f30aedb663b6f": [
+    "Rename Class\torg.reptile.Turtle renamed to org.reptile.TurtleMarinha",
+    "Change Variable Type\tother : Turtle to other : TurtleMarinha in method public equals(obj Object) : boolean from class org.reptile.Reptile"
+  ],
+  "c946700398fc43a437d124f027a9bd3ba25bcafc": [],
+  "802e21bffe95f0740f44d1a45e3c22adae0ba48c": [
+    "Extract Superclass\torg.reptile.Reptile from classes [org.reptile.Turtle]",
+    "Pull Up Method\tpublic getAge() : int from class org.reptile.Turtle to public getAge() : int from class org.reptile.Reptile",
+    "Pull Up Method\tpublic setAge(age int) : void from class org.reptile.Turtle to public setAge(age int) : void from class org.reptile.Reptile",
+    "Pull Up Method\tpublic getName() : int from class org.reptile.Turtle to public getName() : int from class org.reptile.Reptile",
+    "Pull Up Method\tpublic setName(name int) : void from class org.reptile.Turtle to public setName(name int) : void from class org.reptile.Reptile",
+    "Pull Up Method\tpublic getSpead() : int from class org.reptile.Turtle to public getSpead() : int from class org.reptile.Reptile",
+    "Pull Up Method\tpublic setSpead(spead int) : void from class org.reptile.Turtle to public setSpead(spead int) : void from class org.reptile.Reptile",
+    "Pull Up Method\tpublic getAction() : String from class org.reptile.Turtle to public getAction() : String from class org.reptile.Reptile",
+    "Pull Up Method\tpublic setAction(action String) : void from class org.reptile.Turtle to public setAction(action String) : void from class org.reptile.Reptile",
+    "Pull Up Method\tpublic toString() : String from class org.reptile.Turtle to public toString() : String from class org.reptile.Reptile",
+    "Pull Up Method\tpublic hashCode() : int from class org.reptile.Turtle to public hashCode() : int from class org.reptile.Reptile",
+    "Pull Up Method\tpublic equals(obj Object) : boolean from class org.reptile.Turtle to public equals(obj Object) : boolean from class org.reptile.Reptile",
+    "Pull Up Attribute\tprivate age : int from class org.reptile.Turtle to protected age : int from class org.reptile.Reptile",
+    "Change Attribute Access Modifier\tprivate to protected in attribute protected age : int from class org.reptile.Reptile",
+    "Pull Up Attribute\tprivate name : int from class org.reptile.Turtle to protected name : int from class org.reptile.Reptile",
+    "Change Attribute Access Modifier\tprivate to protected in attribute protected name : int from class org.reptile.Reptile",
+    "Pull Up Attribute\tprivate spead : int from class org.reptile.Turtle to protected spead : int from class org.reptile.Reptile",
+    "Change Attribute Access Modifier\tprivate to protected in attribute protected spead : int from class org.reptile.Reptile",
+    "Pull Up Attribute\tprivate action : String from class org.reptile.Turtle to protected action : String from class org.reptile.Reptile",
+    "Change Attribute Access Modifier\tprivate to protected in attribute protected action : String from class org.reptile.Reptile"
+  ],
+  "60226924fead7d0c4646df4f4fd65667e83da6dc": [
+    "Move Class\torg.animals.Bird moved to org.birds.Bird",
+    "Move Class\torg.animals.Chicken moved to org.birds.Chicken",
+    "Move Class\torg.animals.Duck moved to org.birds.Duck"
+  ],
+  "d4bce13a443cf12da40a77c16c1e591f4f985b47": [
+    "Add Parameter\tdog : Dog in method public barkBark(dog Dog) : void from class org.DogManager",
+    "Remove Parameter\tmanager : DogManager in method public barkBark(manager DogManager) : void from class org.animals.Dog",
+    "Move Method\tpublic barkBark(manager DogManager) : void from class org.animals.Dog to public barkBark(dog Dog) : void from class org.DogManager"
+  ],
+  "c0a051fdeb02fd4374ebe625d6af9e3125a2b9af": [
+    "Pull Up Attribute\tprivate speed : int from class org.felines.Tiger to private speed : int from class org.felines.Feline"
+  ],
+  "cd61fd2a70828030ccb3cf46d8719f8b204c52ed": [],
+  "92b201345f730110445d83f4fefe8ae88bc4872b": [
+    "Pull Up Attribute\tprivate age : int from class org.felines.Tiger to private age : int from class org.felines.Feline",
+    "Pull Up Attribute\tprivate name : int from class org.felines.Tiger to private name : int from class org.felines.Feline",
+    "Pull Up Method\tpublic getAge() : int from class org.felines.Tiger to public getAge() : int from class org.felines.Feline",
+    "Pull Up Method\tpublic setAge(age int) : void from class org.felines.Tiger to public setAge(age int) : void from class org.felines.Feline",
+    "Pull Up Method\tpublic getName() : int from class org.felines.Tiger to public getName() : int from class org.felines.Feline",
+    "Pull Up Method\tpublic setName(name int) : void from class org.felines.Tiger to public setName(name int) : void from class org.felines.Feline"
+  ],
+  "1328d7873efe6caaffaf635424e19a4bb5e786a8": [
+    "Extract Interface\torg.felines.AnimalSuper from classes [org.felines.Animal]",
+    "Pull Up Method\tpublic action() : void from class org.felines.Animal to public action() : void from class org.felines.AnimalSuper"
+  ]
+}
